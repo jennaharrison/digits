@@ -1,4 +1,3 @@
-
 import { Col, Container, Row } from 'react-bootstrap';
 import { loggedInProtectedPage } from '@/lib/page-protection';
 import { auth } from '@/lib/auth';
@@ -21,6 +20,10 @@ const ListPage = async () => {
     where: { owner },
   });
 
+  const notes = await prisma.note.findMany({
+    where: { owner },
+  });
+
   return (
     <main>
       <Container id="list" fluid className="py-3">
@@ -30,7 +33,10 @@ const ListPage = async () => {
             <Row xs={1} md={2} lg={3} className="g-4">
               {contacts.map((item) => (
                 <Col key={`Contact-${item.firstName}`}>
-                  <ContactCard contact={item} />
+                  <ContactCard
+                    contact={item}
+                    notes={notes.filter((note) => note.contactId === item.id)}
+                  />
                 </Col>
               ))}
             </Row>
