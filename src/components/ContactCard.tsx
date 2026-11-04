@@ -2,6 +2,7 @@
 
 import { Card, Image } from 'react-bootstrap';
 import { Contact } from '@/lib/validationSchemas';
+import Link from 'next/dist/client/link';
 
 const ContactCard = ({ contact }: { contact: Contact }) => (
   <Card className="h-100">
@@ -17,7 +18,11 @@ const ContactCard = ({ contact }: { contact: Contact }) => (
       <Card.Subtitle>{contact.address}</Card.Subtitle>
       <Card.Text>{contact.description}</Card.Text>
     </Card.Body>
+    <Card.Footer>
+      <Link href={`edit/${contact.id}`}>Edit</Link>
+    </Card.Footer>
   </Card>
+  
 );
 
 export default ContactCard;
