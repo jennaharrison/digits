@@ -1,5 +1,22 @@
 Digits is a Next.js application that allows users to manage their contacts by adding new people, viewing contact profiles, writing notes, and editing existing contacts.
 
+## Installation
+
+To run Digits locally, you will need to have [Node.js](https://nodejs.org/) and [Git](https://git-scm.com/) installed.
+
+1. **Clone the repository**
+
+   Open a terminal and run the following command:
+
+   ```bash
+   git clone https://github.com/your-username/digits.git
+   ```
+
+2. **Navigate to the project directory**
+    ```bash
+    cd digits
+    ```
+
 After logging in, users will be directed to the landing page shown below. From here, they can navigate through the application and access the available features.
 
 <img src="doc/digits-landingpage.png">
