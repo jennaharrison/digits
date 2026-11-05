@@ -1,4 +1,4 @@
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/landing-page.png)
+<img src="doc/digits-landingpage.png">
 
 nextjs-application-template is a sample Next.js 16 application that illustrates:
 
