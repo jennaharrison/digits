@@ -4,6 +4,8 @@ After logging in, users will be directed to the landing page shown below. From h
 
 <img src="doc/digits-landingpage.png">
 
+## Adding a Contact
+
 To add a new contact, click on Add Contact. This will take you to the form shown below.
 
 <img src="doc/digits-addContact.png">
