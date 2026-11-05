@@ -4,7 +4,6 @@ import ContactCardAdmin from '@/components/ContactCardAdmin';
 import { prisma } from '@/lib/prisma';
 import { adminProtectedPage } from '@/lib/page-protection';
 import { auth } from '@/lib/auth';
-import { Contact } from '@/lib/validationSchemas';
 
 const AdminPage = async () => {
   const session = await auth();
@@ -15,7 +14,11 @@ const AdminPage = async () => {
     } | null,
   );
 
-  const contacts: Contact[] = await prisma.contact.findMany({});
+  const contacts = await prisma.contact.findMany({
+    include: {
+      notes: true,
+    },
+  });
 
   return (
     <main>
@@ -26,7 +29,7 @@ const AdminPage = async () => {
             <Row xs={1} md={2} lg={3} className="g-4">
               {contacts.map((item) => (
                 <Col key={`Contact-${item.firstName}`}>
-                  <ContactCardAdmin contact={item} />
+                  <ContactCardAdmin contact={item} notes={item.notes} />
                 </Col>
               ))}
             </Row>
