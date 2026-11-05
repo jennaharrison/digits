@@ -46,7 +46,7 @@ To run Digits locally, you will need to have [Node.js](https://nodejs.org/) and 
    Navigate to [http://localhost:3000](http://localhost:3000) in your browser to access Digits.
    
 
-After opening and logging in to the application, users will be directed to the landing page shown below. From here, they can navigate through the application and access the available features.
+After opening and registering/logging in to the application, users will be directed to the landing page shown below. From here, they can navigate through the application and access the available features.
 
 <img src="doc/digits-landingpage.png">
 
