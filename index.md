@@ -17,7 +17,36 @@ To run Digits locally, you will need to have [Node.js](https://nodejs.org/) and 
     cd digits
     ```
 
-After logging in, users will be directed to the landing page shown below. From here, they can navigate through the application and access the available features.
+3. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+4. **Set up environment variables**
+
+   Create a `.env` file in the root directory and add the environment variables required by the application.
+
+5. **Set up the database**
+
+   Configure your database connection and run the Prisma migrations:
+
+   ```bash
+   npx prisma migrate deploy
+   ```
+
+6. **Run the application**
+
+   ```bash
+   npm run dev
+   ```
+
+7. **Open the application**
+
+   Navigate to [http://localhost:3000](http://localhost:3000) in your browser to access Digits.
+   
+
+After opening and logging in to the application, users will be directed to the landing page shown below. From here, they can navigate through the application and access the available features.
 
 <img src="doc/digits-landingpage.png">
 
