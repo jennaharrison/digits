@@ -1,17 +1,25 @@
+Digits is a Next.js application that allows users to manage their contacts by adding new people, viewing contact profiles, writing notes, and editing existing contacts.
+
+After logging in, users will be directed to the landing page shown below. From here, they can navigate through the application and access the available features.
+
 <img src="doc/digits-landingpage.png">
 
-Digits is a Next.js application that allows users to view and add contacts. The image listed above is the landing page once a user has logged in.
-
-Next, after clicking on "Add Contact," you should see this page:
+To add a new contact, click on Add Contact. This will take you to the form shown below.
 
 <img src="doc/digits-addContact.png">
 
-This is where users can go to upload new contacts into the list. To add a new contact, fill in the boxes for first name, last name, address, image, and give a short description of them. Once those have been filled out, you may press submit.
+Fill out the form with the contact's first name, last name, address, image, and a short description. Once all the information has been entered, click Submit to add the contact to the account.
 
-Submitted contacts will show up in the "List Contacts" page. It should look like this:
+## Viewing a Contact
 
-<img src="doc/digits-listContacts.png"> 
+After submitting a contact, the new entry will appear on the List Contacts page, as shown below.
 
-Here, users can see submitted contacts, write notes, and even edit a contact's profile. 
+<img src="doc/digits-listContacts.png">
+
+On this page, users can view their submitted contacts, write notes about each person, and access options to edit their contact profiles.
+
+## Editing a Contact
+
+To update an existing contact, select the edit option on their profile. This will open the edit page, shown below, where users can make changes to the contact's information and save their updates.
 
 <img src="doc/digits-editContact.png">
